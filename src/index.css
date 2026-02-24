@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@layer components {
+  /* Container & Layout */
+  .container-page {
+    @apply min-h-screen bg-linear-to-br from-neutral-50 via-neutral-100 to-neutral-200 p-6;
+  }
+
+  .container-content {
+    @apply mx-auto max-w-2xl;
+  }
+
+  /* Typography */
+  .heading-1 {
+    @apply text-4xl font-bold text-neutral-900 mb-2;
+  }
+
+  .heading-2 {
+    @apply text-xl font-semibold text-neutral-900 mb-4;
+  }
+
+  .heading-3 {
+    @apply text-lg font-semibold text-neutral-900 mb-4;
+  }
+
+  .subtitle {
+    @apply text-neutral-600 text-sm;
+  }
+
+  .text-muted {
+    @apply text-neutral-500 text-sm;
+  }
+
+  .text-xs-muted {
+    @apply text-neutral-500 text-xs;
+  }
+
+  /* Cards & Sections */
+  .card-neutral {
+    @apply bg-white border border-neutral-200 rounded-lg shadow-sm p-6;
+  }
+
+  .card-section {
+    @apply space-y-4;
+  }
+
+  /* Forms */
+  .input-base {
+    @apply px-3 py-2 text-base rounded border-2 border-neutral-300 transition-all focus:outline-none focus:border-neutral-600 focus:ring-1 focus:ring-neutral-400 disabled:bg-neutral-100 disabled:cursor-not-allowed disabled:text-neutral-400 w-full;
+  }
+
+  .btn-primary {
+    @apply px-5 py-2 text-base font-medium rounded bg-neutral-700 text-white transition-all hover:bg-neutral-800 disabled:bg-neutral-300 disabled:cursor-not-allowed disabled:text-neutral-500 hover:disabled:shadow-none hover:shadow-md hover:-translate-y-0.5 w-full;
+  }
+
+  /* Messages */
+  .alert-error {
+    @apply p-3 bg-red-50 border border-red-200 rounded text-sm text-red-700;
+  }
+
+  .alert-success {
+    @apply p-3 bg-green-50 border border-green-200 rounded text-sm text-green-700;
+  }
+
+  /* List Items */
+  .task-item-optimistic {
+    @apply p-3 rounded border-l-4 transition-all bg-amber-50 border-l-amber-400 border border-amber-200;
+  }
+
+  .task-item-confirmed {
+    @apply p-3 rounded border-l-4 transition-all bg-neutral-50 border-l-green-500 border border-neutral-200;
+  }
+
+  .task-item-row {
+    @apply flex items-center justify-between;
+  }
+
+  .task-title {
+    @apply text-neutral-900 font-medium;
+  }
+
+  .task-time {
+    @apply text-neutral-500 text-xs;
+  }
+
+  /* Utilities */
+  .header-main {
+    @apply mb-8 text-center;
+  }
+
+  .footer-main {
+    @apply mt-12 text-center text-xs text-neutral-500;
+  }
+
+  .form-group {
+    @apply space-y-4;
+  }
+
+  .section-space {
+    @apply space-y-6;
+  }
+
+  .list-items {
+    @apply space-y-3;
+  }
+}
